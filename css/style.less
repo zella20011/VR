@@ -652,7 +652,7 @@ body.page-what-we-do{
 					}
 					span{
 						display: block;
-						padding: 20px;
+						padding-left: 20px;
 						font-size: 18px;
 						line-height: 1.5;
 					}
@@ -660,6 +660,10 @@ body.page-what-we-do{
 				&:nth-child(odd){
 					.col{
 						float: right;
+						span{
+							padding-left: 0;
+							padding-right: 20px;
+						}
 					}
 				}
 			}
@@ -755,6 +759,18 @@ body.page-news{
 			}
 		}
 	}
+	/*--- Page What-we-do ---*/
+	body.page-what-we-do{
+		#what-do{
+			padding-top: 71px;
+		}
+	}
+	/*--- Page News ---*/
+	body.page-news{
+		#news{
+			padding-top: 71px;
+		}
+	}
 }
 @media(max-width: 700px){
 	section#about{
@@ -837,6 +853,84 @@ body.page-news{
 			}
 		}
 	}
+	/*--- Page About Us ---*/
+	body.page-about-us{
+		#about{
+			.center{
+				.row{
+					div.col{
+						&:first-child{
+							float: none;
+							min-width: 270px;
+							margin-left: auto !important;
+							margin-right: auto !important;
+							margin-bottom: 0;
+						}
+						&:last-child{
+							width: 100%;
+							margin-left: 0;
+							span{
+								text-align: justify;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*--- Page What-we-do ---*/
+	body.page-what-we-do{
+		section#what-do{
+			.center{
+				.row{
+					.col{
+						width: 100%;
+						&:last-child{
+							margin-top: 20px;
+						}
+						span{
+							padding-left: 0;
+							text-align: justify;
+						}
+					}
+					&:nth-child(odd){
+						.col{
+							span{
+								padding-right: 0;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	/*--- Page News ---*/
+	body.page-news{
+		section#news{
+			.center{
+				.row{
+					margin-bottom: 30px;
+					&:last-child{
+						margin-top: 0px;
+					}
+					.col{
+						margin-left: 0;
+						margin-right: 0;
+						.photo{
+							float: none;
+							min-width: 270px;
+							margin-left: auto;
+							margin-right: auto;
+							margin-bottom: 20px;
+						}
+						span{
+							text-align: justify;
+						}
+					}
+				}
+			}
+		}
+	}
 }
 @media(max-width: 500px){
 	section#about{
@@ -844,10 +938,13 @@ body.page-news{
 			.row{
 				.col{
 					width: 80%;
-					margin-left: 10% !important;
-					margin-right: 10% !important;
+					margin-left: 10%;
+					margin-right: 10%;
 					&:first-child{
 						margin-bottom: 30px;
+					}
+					&:nth-child(even){
+						margin-left: 10%;
 					}
 				}
 			}
@@ -910,4 +1007,43 @@ body.page-news{
 			}
 		}
 	}
+	/*--- Page News ---*/
+	body.page-news{
+		section#news{
+			.center{
+				.row{
+					padding: 15px;
+					.col{
+						.photo{
+							min-width: 250px;
+						}
+					}
+				}
+			}
+		}
+	}
 }
+/*--- Page About Us ---*/
+	body.page-about-us{
+		#about{
+			.center{
+
+			}
+		}
+	}
+	/*--- Page What-we-do ---*/
+	body.page-what-we-do{
+		#what-do{
+			.center{
+				
+			}
+		}
+	}
+	/*--- Page News ---*/
+	body.page-news{
+		#news{
+			.center{
+				
+			}
+		}
+	}

@@ -656,12 +656,16 @@ body.page-what-we-do section#what-do .center .row .col img {
 }
 body.page-what-we-do section#what-do .center .row .col span {
   display: block;
-  padding: 20px;
+  padding-left: 20px;
   font-size: 18px;
   line-height: 1.5;
 }
 body.page-what-we-do section#what-do .center .row:nth-child(odd) .col {
   float: right;
+}
+body.page-what-we-do section#what-do .center .row:nth-child(odd) .col span {
+  padding-left: 0;
+  padding-right: 20px;
 }
 /*----- Page News -----*/
 body.page-news header {
@@ -744,6 +748,14 @@ body.page-news section#news .center .row .col span {
   body.page-about-us #about .center .row .col:last-child {
     display: block;
   }
+  /*--- Page What-we-do ---*/
+  body.page-what-we-do #what-do {
+    padding-top: 71px;
+  }
+  /*--- Page News ---*/
+  body.page-news #news {
+    padding-top: 71px;
+  }
 }
 @media (max-width: 700px) {
   section#about .center .row .col {
@@ -804,15 +816,68 @@ body.page-news section#news .center .row .col span {
   footer .center .right .cont-form button {
     width: 100%;
   }
+  /*--- Page About Us ---*/
+  body.page-about-us #about .center .row div.col:first-child {
+    float: none;
+    min-width: 270px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-bottom: 0;
+  }
+  body.page-about-us #about .center .row div.col:last-child {
+    width: 100%;
+    margin-left: 0;
+  }
+  body.page-about-us #about .center .row div.col:last-child span {
+    text-align: justify;
+  }
+  /*--- Page What-we-do ---*/
+  body.page-what-we-do section#what-do .center .row .col {
+    width: 100%;
+  }
+  body.page-what-we-do section#what-do .center .row .col:last-child {
+    margin-top: 20px;
+  }
+  body.page-what-we-do section#what-do .center .row .col span {
+    padding-left: 0;
+    text-align: justify;
+  }
+  body.page-what-we-do section#what-do .center .row:nth-child(odd) .col span {
+    padding-right: 0;
+  }
+  /*--- Page News ---*/
+  body.page-news section#news .center .row {
+    margin-bottom: 30px;
+  }
+  body.page-news section#news .center .row:last-child {
+    margin-top: 0px;
+  }
+  body.page-news section#news .center .row .col {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  body.page-news section#news .center .row .col .photo {
+    float: none;
+    min-width: 270px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  body.page-news section#news .center .row .col span {
+    text-align: justify;
+  }
 }
 @media (max-width: 500px) {
   section#about .center .row .col {
     width: 80%;
-    margin-left: 10% !important;
-    margin-right: 10% !important;
+    margin-left: 10%;
+    margin-right: 10%;
   }
   section#about .center .row .col:first-child {
     margin-bottom: 30px;
+  }
+  section#about .center .row .col:nth-child(even) {
+    margin-left: 10%;
   }
   section#news {
     padding-bottom: 10px;
@@ -863,4 +928,14 @@ body.page-news section#news .center .row .col span {
     margin-left: 10%;
     margin-top: 10%;
   }
+  /*--- Page News ---*/
+  body.page-news section#news .center .row {
+    padding: 15px;
+  }
+  body.page-news section#news .center .row .col .photo {
+    min-width: 250px;
+  }
 }
+/*--- Page About Us ---*/
+/*--- Page What-we-do ---*/
+/*--- Page News ---*/
