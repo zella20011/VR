@@ -666,6 +666,63 @@ body.page-what-we-do{
 		}
 	}
 }
+/*----- Page News -----*/
+body.page-news{
+	header{
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	section#news{
+		.center{
+			.row{
+				display: inline-block;
+				width: 100%;
+				padding: 20px;
+				border: 1px solid #000000;
+				h3{
+					.title;
+					margin-top: 0px;
+					font-size: 22px;
+					font-weight: normal;
+					span{
+						border-bottom-width: 2px;
+					}
+				}
+				.col{
+					float: left;
+					width: 100%;
+					&:hover{
+						.photo{
+							img{
+								-webkit-transform: none;
+								-ms-transform: none;
+								-o-transform: none;
+								transform: none;
+							}
+						}
+					}
+					.photo{
+						width: 30%;
+						min-width: 300px;
+						&:hover{
+							img{
+								-webkit-transform: scale(1.1);
+								-ms-transform: scale(1.1);
+								-o-transform: scale(1.1);
+								transform: scale(1.1);
+							}
+						}
+					}
+					span{
+						display: block;
+						font-size: 18px;
+						line-height: 1.5;
+					}
+				}
+			}
+		}
+	}
+}
 
 
 /*----- RESPONSIV -----*/

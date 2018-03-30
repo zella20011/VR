@@ -663,6 +663,66 @@ body.page-what-we-do section#what-do .center .row .col span {
 body.page-what-we-do section#what-do .center .row:nth-child(odd) .col {
   float: right;
 }
+/*----- Page News -----*/
+body.page-news header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.page-news section#news .center .row {
+  display: inline-block;
+  width: 100%;
+  padding: 20px;
+  border: 1px solid #000000;
+}
+body.page-news section#news .center .row h3 {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 0px;
+  font-size: 22px;
+  font-weight: normal;
+}
+body.page-news section#news .center .row h3 span {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+}
+body.page-news section#news .center .row h3 span {
+  border-bottom-width: 2px;
+}
+body.page-news section#news .center .row .col {
+  float: left;
+  width: 100%;
+}
+body.page-news section#news .center .row .col:hover .photo img {
+  -webkit-transform: none;
+  -ms-transform: none;
+  -o-transform: none;
+  transform: none;
+}
+body.page-news section#news .center .row .col .photo {
+  width: 30%;
+  min-width: 300px;
+}
+body.page-news section#news .center .row .col .photo:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+body.page-news section#news .center .row .col span {
+  display: block;
+  font-size: 18px;
+  line-height: 1.5;
+}
 /*----- RESPONSIV -----*/
 @media (max-width: 1200px) {
   .center {
