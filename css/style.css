@@ -634,6 +634,35 @@ body.page-about-us #about .center .row div.col:last-child span {
   font-size: 18px;
   line-height: 1.5;
 }
+/*----- Page About Us -----*/
+body.page-what-we-do header {
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.8);
+}
+body.page-what-we-do section#what-do .center .descrip {
+  margin-bottom: 70px;
+}
+body.page-what-we-do section#what-do .center .row {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+body.page-what-we-do section#what-do .center .row .col {
+  float: left;
+  width: 50%;
+}
+body.page-what-we-do section#what-do .center .row .col img {
+  width: 100%;
+}
+body.page-what-we-do section#what-do .center .row .col span {
+  display: block;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+body.page-what-we-do section#what-do .center .row:nth-child(odd) .col {
+  float: right;
+}
 /*----- RESPONSIV -----*/
 @media (max-width: 1200px) {
   .center {

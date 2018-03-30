@@ -629,6 +629,44 @@ body.page-about-us{
 		}
 	}
 }
+/*----- Page About Us -----*/
+body.page-what-we-do{
+	header{
+		position: relative;
+		background-color: rgba(0, 0, 0, 0.8);
+	}
+	section#what-do{
+		.center{
+			.descrip{
+				margin-bottom: 70px;
+			}
+			.row{
+				display: inline-block;
+				width: 100%;
+				margin-bottom: 30px;
+				.col{
+					float: left;
+					width: 50%;
+					img{
+						width: 100%;
+					}
+					span{
+						display: block;
+						padding: 20px;
+						font-size: 18px;
+						line-height: 1.5;
+					}
+				}
+				&:nth-child(odd){
+					.col{
+						float: right;
+					}
+				}
+			}
+		}
+	}
+}
+
 
 /*----- RESPONSIV -----*/
 
