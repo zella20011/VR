@@ -54,4 +54,11 @@ $(document).ready(function(){
 		$('.overlay').hide(800);
 	});
 
+
+	$('.slaider').slick({
+		infinite: true,
+		autoplay: true,
+		autoplaySpeed: 2000,
+	});
+
 });
