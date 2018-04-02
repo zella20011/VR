@@ -296,6 +296,9 @@ section#video .down {
   -o-transform: translateX(-50%);
   transform: translateX(-50%);
 }
+section#hardware {
+  padding-bottom: 50px;
+}
 section#hardware h2 {
   float: left;
   width: 100%;
@@ -317,6 +320,7 @@ section#hardware h2 span {
 section#hardware .center .row {
   display: inline-block;
   width: 100%;
+  padding-top: 30px;
 }
 section#hardware .center .row .col {
   float: left;
@@ -332,6 +336,16 @@ section#hardware .center .row .col .photo {
 }
 section#hardware .center .row .col .photo img {
   width: 100%;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+section#hardware .center .row .col .photo:hover img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 section#hardware .center .row .col h3 {
   float: left;

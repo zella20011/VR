@@ -300,6 +300,7 @@ section#video{
 	}
 }
 section#hardware{
+	padding-bottom: 50px;
 	h2{
 		.title
 	}
@@ -307,6 +308,7 @@ section#hardware{
 		.row{
 			display: inline-block;
 			width: 100%;
+			padding-top: 30px;
 			.col{
 				float: left;
 				width: 27%;
@@ -319,6 +321,18 @@ section#hardware{
 					margin-right: auto;
 					img{
 						width: 100%;
+						-moz-transition: all 1s ease-out;
+						-o-transition: all 1s ease-out;
+						-webkit-transition: all 1s ease-out;
+						transition: all 1s ease-out;
+					}
+					&:hover{
+						img{
+							-webkit-transform: scale(1.1);
+							-ms-transform: scale(1.1);
+							-o-transform: scale(1.1);
+							transform: scale(1.1);
+						}
 					}
 				}
 				h3{
