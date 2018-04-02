@@ -417,6 +417,125 @@ section#room .slaider .room_2 {
 section#room .slaider .room_3 {
   background-image: url(../image/photo-room-3.png);
 }
+section#rules {
+  padding-bottom: 50px;
+}
+section#rules h2 {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+section#rules h2 span {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+}
+section#rules .center .rol {
+  display: inline-block;
+  width: 100%;
+}
+section#rules .center .rol .col {
+  float: left;
+  width: 27%;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+section#rules .center .rol .col .photo {
+  width: 100%;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+section#rules .center .rol .col .photo img {
+  width: 100%;
+}
+section#rules .center .rol .col .text {
+  display: block;
+  font-size: 18px;
+  line-height: 1.3;
+  text-align: center;
+}
+section#game {
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #909090;
+  box-shadow: 0px 0px 15px 20px #909090;
+}
+section#game h2 {
+  float: left;
+  width: 100%;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+}
+section#game h2 span {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+  border-bottom: 5px solid #000000;
+}
+section#game .center .rol {
+  display: inline-block;
+  width: 100%;
+}
+section#game .center .rol .col {
+  float: left;
+  display: block;
+  width: 200px;
+  margin-right: 2%;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+section#game .center .rol .col:nth-child(5n+5) {
+  margin-right: 0;
+}
+section#game .center .rol .col .photo {
+  width: 100%;
+  max-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+section#game .center .rol .col .photo img {
+  width: 100%;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+section#game .center .rol .col .text {
+  display: block;
+  font-size: 16px;
+  color: #000000;
+  text-align: center;
+  -moz-transition: all 1s ease-out;
+  -o-transition: all 1s ease-out;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+}
+section#game .center .rol .col:hover .photo img {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
+}
+section#game .center .rol .col:hover .text {
+  color: #ffffff;
+}
 section#about {
   padding-bottom: 50px;
 }
