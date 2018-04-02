@@ -40,6 +40,7 @@ header, section, footer{
 	margin-left: auto;
 	margin-right: auto;
 	margin-bottom: 30px;
+	font-size: 18px;
 	text-align: center;
 	line-height: 1.5;
 }
@@ -367,6 +368,12 @@ section#room{
 		overflow: hidden;
 		float: left;
 		width: 100%;
+		.slick-prev{
+			left: 25px;
+		}
+		.slick-next{
+			right: 25px;
+		}
 		.slaid{
 			float: left;
 			width: 100%;
@@ -409,13 +416,12 @@ section#rules{
 				margin-left: 3%;
 				margin-right: 3%;
 				.photo{
-					width: 100%;
-					max-width: 200px;
-					margin-left: auto;
-					margin-right: auto;
 					margin-bottom: 20px;
 					img{
-						width: 100%;
+						display: block;
+						max-height: 150px;
+						margin-left: auto;
+						margin-right: auto;
 					}
 				}
 				.text{

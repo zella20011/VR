@@ -43,6 +43,7 @@ footer {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+  font-size: 18px;
   text-align: center;
   line-height: 1.5;
 }
@@ -377,6 +378,12 @@ section#room .slaider {
   float: left;
   width: 100%;
 }
+section#room .slaider .slick-prev {
+  left: 25px;
+}
+section#room .slaider .slick-next {
+  right: 25px;
+}
 section#room .slaider .slaid {
   float: left;
   width: 100%;
@@ -449,14 +456,13 @@ section#rules .center .rol .col {
   margin-right: 3%;
 }
 section#rules .center .rol .col .photo {
-  width: 100%;
-  max-width: 200px;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 20px;
 }
 section#rules .center .rol .col .photo img {
-  width: 100%;
+  display: block;
+  max-height: 150px;
+  margin-left: auto;
+  margin-right: auto;
 }
 section#rules .center .rol .col .text {
   display: block;
