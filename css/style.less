@@ -85,7 +85,7 @@ header{
 		}
 		nav{
 			float: right;
-			width: 60%;
+			width: 70%;
 			margin-top: 15px;
 			ul{
 				float: left;
@@ -95,7 +95,7 @@ header{
 				li{
 					position: relative;
 					float: left;
-					width: 20%;
+					width: 16.5%;
 					min-height: 50px;
 					a{
 						display: block;
@@ -117,10 +117,10 @@ header{
 						.hover{
 							position: absolute;
 							top: 50px;
-							left: 0px;
+							left: -45px;
 							display: block;
 							width: 100%;
-							max-width: 200px;
+							min-width: 220px;
 							li{
 								float: left;
 								width: 100%;
@@ -451,6 +451,7 @@ section#game{
 				float: left;
 				display: block;
 				width: 200px;
+				min-height: 255px;
 				margin-right: 2%;
 				margin-bottom: 40px;
 				text-decoration: none;
@@ -459,7 +460,7 @@ section#game{
 				}
 				.photo{
 					width: 100%;
-					max-width: 180px;
+					max-width: 150px;
 					margin-left: auto;
 					margin-right: auto;
 					img{
@@ -472,6 +473,7 @@ section#game{
 				}
 				.text{
 					display: block;
+					margin-top: 15px;
 					font-size: 16px;
 					color: #000000;
 					text-align: center;
@@ -919,6 +921,91 @@ body.page-news{
 						display: block;
 						font-size: 18px;
 						line-height: 1.5;
+					}
+				}
+			}
+		}
+	}
+}
+/*----- Page game -----*/
+body.page-game{
+	section#p-game{
+		float: left;
+		width: 100%;
+		min-height: 500px;
+		background-image: url(../image/game-photo.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		box-shadow: 0px 0px 10px 10px #999999;
+		span{
+			display: block;
+			font-size: 35px;
+			font-weight: bold;
+			line-height: 500px;
+			text-align: center;
+			color: #ffffff;
+			text-shadow: 0px 0px 4px #000000;
+		}
+	}
+	section#info-game{
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.center{
+			.col{
+				float: left;
+				width: 100%;
+				&:first-child{
+					max-width: 200px;
+					margin-left: 30px;
+					.photo{
+						width: 100%;
+						img{
+							width: 100%;
+						}
+					}
+					.col{
+						margin-top: 20px;
+						span{
+							display: block;
+							font-size: 18px;
+							font-style: italic;
+							text-align: center;
+							&.big{
+								margin-bottom: 5px;
+								text-transform: uppercase;
+								font-weight: bold;
+								font-style: normal;
+							}
+						}
+						&:last-child{
+							width: 100%;
+							margin-right: 0;
+						}
+					}
+				}
+				&:last-child{
+					float: right;
+					width: 70%;
+					margin-right: 30px;
+					span.text{
+						display: block;
+						margin-bottom: 20px;
+						font-size: 18px;
+						line-height: 1.4;
+						span.important{
+							margin-right: 5px;
+							font-weight: bold;
+						}
+					}
+					.order{
+						width: 100%;
+						height: 300px;
+						font-size: 30px;
+						line-height: 300px;
+						text-align: center;
+						color: #ffffff;
+						background-color: #999999;
 					}
 				}
 			}
