@@ -999,55 +999,51 @@ body.page-game section#info-game {
   padding-top: 50px;
   padding-bottom: 50px;
 }
-body.page-game section#info-game .center .col {
+body.page-game section#info-game .center .coll {
   float: left;
   width: 100%;
 }
-body.page-game section#info-game .center .col:first-child {
+body.page-game section#info-game .center .coll:first-child {
   max-width: 200px;
   margin-left: 30px;
 }
-body.page-game section#info-game .center .col:first-child .photo {
+body.page-game section#info-game .center .coll:first-child .photo {
   width: 100%;
 }
-body.page-game section#info-game .center .col:first-child .photo img {
+body.page-game section#info-game .center .coll:first-child .photo img {
   width: 100%;
 }
-body.page-game section#info-game .center .col:first-child .col {
+body.page-game section#info-game .center .coll:first-child .col {
   margin-top: 20px;
 }
-body.page-game section#info-game .center .col:first-child .col span {
+body.page-game section#info-game .center .coll:first-child .col span {
   display: block;
   font-size: 18px;
   font-style: italic;
   text-align: center;
 }
-body.page-game section#info-game .center .col:first-child .col span.big {
+body.page-game section#info-game .center .coll:first-child .col span.big {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
 }
-body.page-game section#info-game .center .col:first-child .col:last-child {
-  width: 100%;
-  margin-right: 0;
-}
-body.page-game section#info-game .center .col:last-child {
+body.page-game section#info-game .center .coll:last-child {
   float: right;
   width: 70%;
   margin-right: 30px;
 }
-body.page-game section#info-game .center .col:last-child span.text {
+body.page-game section#info-game .center .coll:last-child span.text {
   display: block;
   margin-bottom: 20px;
   font-size: 18px;
   line-height: 1.4;
 }
-body.page-game section#info-game .center .col:last-child span.text span.important {
+body.page-game section#info-game .center .coll:last-child span.text span.important {
   margin-right: 5px;
   font-weight: bold;
 }
-body.page-game section#info-game .center .col:last-child .order {
+body.page-game section#info-game .center .coll:last-child .order {
   width: 100%;
   height: 300px;
   font-size: 30px;
@@ -1084,6 +1080,17 @@ body.page-game section#info-game .center .col:last-child .order {
   /*--- Page News ---*/
   body.page-news #news {
     padding-top: 71px;
+  }
+  /*--- Page template game ---*/
+  body.page-game section#p-game {
+    min-height: 400px;
+  }
+  body.page-game section#p-game span {
+    line-height: 400px;
+  }
+  body.page-game section#info-game .center .coll:first-child {
+    max-width: 20%;
+    margin-left: 1%;
   }
 }
 @media (max-width: 700px) {
@@ -1195,6 +1202,39 @@ body.page-game section#info-game .center .col:last-child .order {
   body.page-news section#news .center .row .col span {
     text-align: justify;
   }
+  /*--- Page template game ---*/
+  body.page-game section#p-game {
+    min-height: 300px;
+  }
+  body.page-game section#p-game span {
+    line-height: 300px;
+  }
+  body.page-game section#info-game .center .coll:first-child {
+    max-width: 100%;
+    margin-left: 0;
+    margin-bottom: 30px;
+  }
+  body.page-game section#info-game .center .coll:first-child .photo {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+  }
+  body.page-game section#info-game .center .coll:first-child .row {
+    float: left;
+    width: 33%;
+    margin-top: 5px;
+  }
+  body.page-game section#info-game .center .coll:first-child .row .col span {
+    font-size: 16px;
+  }
+  body.page-game section#info-game .center .coll:first-child .row .name,
+  body.page-game section#info-game .center .coll:first-child .row .complexity {
+    margin-top: 0;
+  }
+  body.page-game section#info-game .center .coll:last-child {
+    width: 100%;
+    margin-right: 0;
+  }
 }
 @media (max-width: 500px) {
   section#about .center .row .col {
@@ -1263,6 +1303,28 @@ body.page-game section#info-game .center .col:last-child .order {
   }
   body.page-news section#news .center .row .col .photo {
     min-width: 250px;
+  }
+  /*--- Page template game ---*/
+  body.page-game section#p-game {
+    min-height: 250px;
+  }
+  body.page-game section#p-game span {
+    line-height: 250px;
+  }
+  body.page-game section#info-game .center .coll:first-child .photo {
+    float: none;
+    min-width: 160px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body.page-game section#info-game .center .coll:first-child .row {
+    width: 100%;
+  }
+  body.page-game section#info-game .center .coll:first-child .row .col {
+    margin-top: 20px;
+  }
+  body.page-game section#info-game .center .coll:last-child span.text {
+    text-align: justify;
   }
 }
 /*--- Page About Us ---*/

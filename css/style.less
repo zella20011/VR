@@ -952,7 +952,7 @@ body.page-game{
 		padding-top: 50px;
 		padding-bottom: 50px;
 		.center{
-			.col{
+			.coll{
 				float: left;
 				width: 100%;
 				&:first-child{
@@ -977,10 +977,6 @@ body.page-game{
 								font-weight: bold;
 								font-style: normal;
 							}
-						}
-						&:last-child{
-							width: 100%;
-							margin-right: 0;
 						}
 					}
 				}
@@ -1054,6 +1050,25 @@ body.page-game{
 	body.page-news{
 		#news{
 			padding-top: 71px;
+		}
+	}
+	/*--- Page template game ---*/
+	body.page-game{
+		section#p-game{
+			min-height: 400px;
+			span{
+				line-height: 400px;
+			} 
+		}
+		section#info-game{
+			.center{
+				.coll{
+					&:first-child{
+						max-width: 20%;
+						margin-left: 1%;
+					}
+				}
+			}
 		}
 	}
 }
@@ -1216,6 +1231,49 @@ body.page-game{
 			}
 		}
 	}
+	/*--- Page template game ---*/
+	body.page-game{
+		section#p-game{
+			min-height: 300px;
+			span{
+				line-height: 300px;
+			}
+		}
+		section#info-game{
+			.center{
+				.coll{
+					&:first-child{
+						max-width: 100%;
+						margin-left: 0;
+						margin-bottom: 30px;
+						.photo{
+							float: left;
+							width: 30%;
+							margin-right: 3%;
+						}
+						.row{
+							float: left;
+							width: 33%;
+							margin-top: 5px;
+							.col{
+								span{
+									font-size: 16px;
+								}
+							}
+
+							.name, .complexity{
+								margin-top: 0;
+							}
+						}
+					}
+					&:last-child{
+						width: 100%;
+						margin-right: 0;
+					}
+				}
+			}
+		}
+	}
 }
 @media(max-width: 500px){
 	section#about{
@@ -1301,6 +1359,40 @@ body.page-game{
 					.col{
 						.photo{
 							min-width: 250px;
+						}
+					}
+				}
+			}
+		}
+	}
+	/*--- Page template game ---*/
+	body.page-game{
+		section#p-game{
+			min-height: 250px;
+			span{
+				line-height: 250px;
+			}
+		}
+		section#info-game{
+			.center{
+				.coll{
+					&:first-child{
+						.photo{
+							float: none;
+							min-width: 160px;
+							margin-left: auto;
+							margin-right: auto;
+						}
+						.row{
+							width: 100%;
+							.col{
+								margin-top: 20px;
+							}
+						}
+					}
+					&:last-child{
+						span.text{
+							text-align: justify;
 						}
 					}
 				}
