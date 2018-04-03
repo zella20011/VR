@@ -756,6 +756,7 @@ footer {
   background-image: url(../image/map-image.png);
   background-repeat: no-repeat;
   background-size: cover;
+  box-shadow: 0px 0px 10px 8px #777777;
 }
 footer .center {
   overflow: hidden;
@@ -999,7 +1000,6 @@ body.page-game section#p-game span {
 }
 body.page-game section#info-game {
   padding-top: 50px;
-  padding-bottom: 50px;
 }
 body.page-game section#info-game .center .coll {
   float: left;
