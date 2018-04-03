@@ -254,6 +254,7 @@ section#video {
   position: relative;
   background-color: #000000;
   z-index: 5;
+  box-shadow: 0px 0px 10px 8px #000000;
 }
 section#video .video {
   position: absolute;
@@ -330,6 +331,7 @@ section#hardware .center .row .col {
   margin-right: 3%;
 }
 section#hardware .center .row .col .photo {
+  overflow: hidden;
   width: 100%;
   max-width: 190px;
   margin-left: auto;
@@ -445,26 +447,26 @@ section#rules h2 span {
   padding-bottom: 10px;
   border-bottom: 5px solid #000000;
 }
-section#rules .center .rol {
+section#rules .center .row {
   display: inline-block;
   width: 100%;
 }
-section#rules .center .rol .col {
+section#rules .center .row .col {
   float: left;
   width: 27%;
   margin-left: 3%;
   margin-right: 3%;
 }
-section#rules .center .rol .col .photo {
+section#rules .center .row .col .photo {
   margin-bottom: 20px;
 }
-section#rules .center .rol .col .photo img {
+section#rules .center .row .col .photo img {
   display: block;
   max-height: 150px;
   margin-left: auto;
   margin-right: auto;
 }
-section#rules .center .rol .col .text {
+section#rules .center .row .col .text {
   display: block;
   font-size: 18px;
   line-height: 1.3;
@@ -495,11 +497,11 @@ section#game h2 span {
   padding-bottom: 10px;
   border-bottom: 5px solid #000000;
 }
-section#game .center .rol {
+section#game .center .row {
   display: inline-block;
   width: 100%;
 }
-section#game .center .rol .col {
+section#game .center .row .col {
   float: left;
   display: block;
   width: 200px;
@@ -508,23 +510,23 @@ section#game .center .rol .col {
   margin-bottom: 40px;
   text-decoration: none;
 }
-section#game .center .rol .col:nth-child(5n+5) {
+section#game .center .row .col:nth-child(5n+5) {
   margin-right: 0;
 }
-section#game .center .rol .col .photo {
+section#game .center .row .col .photo {
   width: 100%;
   max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
-section#game .center .rol .col .photo img {
+section#game .center .row .col .photo img {
   width: 100%;
   -moz-transition: all 1s ease-out;
   -o-transition: all 1s ease-out;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-section#game .center .rol .col .text {
+section#game .center .row .col .text {
   display: block;
   margin-top: 15px;
   font-size: 16px;
@@ -535,13 +537,13 @@ section#game .center .rol .col .text {
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
-section#game .center .rol .col:hover .photo img {
+section#game .center .row .col:hover .photo img {
   -webkit-transform: scale(1.1);
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform: scale(1.1);
 }
-section#game .center .rol .col:hover .text {
+section#game .center .row .col:hover .text {
   color: #ffffff;
 }
 section#about {
@@ -1021,12 +1023,14 @@ body.page-game section#info-game .center .coll:first-child .col span {
   font-size: 18px;
   font-style: italic;
   text-align: center;
+  color: #777777;
 }
 body.page-game section#info-game .center .coll:first-child .col span.big {
   margin-bottom: 5px;
   text-transform: uppercase;
   font-weight: bold;
   font-style: normal;
+  color: #000000;
 }
 body.page-game section#info-game .center .coll:last-child {
   float: right;
@@ -1058,6 +1062,10 @@ body.page-game section#info-game .center .coll:last-child .order {
     padding-left: 20px;
     padding-right: 20px;
   }
+  section#game .center .row .col {
+    width: 25%;
+    margin-right: 0;
+  }
 }
 @media (max-width: 1000px) {
   header .center {
@@ -1065,6 +1073,9 @@ body.page-game section#info-game .center .coll:last-child .order {
   }
   header #center {
     display: block;
+  }
+  section#game .center .row .col {
+    width: 33%;
   }
   /*--- Page About Us ---*/
   body.page-about-us #about {
@@ -1094,6 +1105,23 @@ body.page-game section#info-game .center .coll:last-child .order {
   }
 }
 @media (max-width: 700px) {
+  section#hardware .center .row .col {
+    float: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+  section#rules .center .row .col {
+    float: none;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 50px;
+  }
+  section#game .center .row .col {
+    width: 50%;
+  }
   section#about .center .row .col {
     width: 47.5%;
     margin-right: 0;
@@ -1237,6 +1265,18 @@ body.page-game section#info-game .center .coll:last-child .order {
   }
 }
 @media (max-width: 500px) {
+  section#hardware .center .row .col .text {
+    text-align: justify;
+  }
+  section#rules .center .row .col .text {
+    text-align: justify;
+  }
+  section#game .center .row .col {
+    width: 90%;
+    min-height: auto;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
   section#about .center .row .col {
     width: 80%;
     margin-left: 10%;
